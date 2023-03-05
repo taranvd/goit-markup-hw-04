@@ -189,7 +189,8 @@ img {
 
 /* ------- Section INTRO style start  ------- */
 .intro {
-	background: var(--background);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url(../images/people-office.jpg);
 }
 
 .page-intro {
@@ -310,7 +311,70 @@ img {
 	padding: 32px 0;
 }
 
+.team-desc {
+	margin-bottom: 8px;
+}
+
+.team-social-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.team-social-item {
+	width: 40px;
+	height: 40px;
+}
+
+.team-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+	border-radius: 50%;
+	background-color: var(--logo-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+	background-color: var(--btn-hover-color);
+}
+
 /* ------- Section TEAM style end ------- */
+
+/* ------- Section Customs style end ------- */
+
+.customers-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.customers-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 168px;
+	height: 88px;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+}
+
+.customers-item:hover {
+	border-color: var(--btn-hover-color);
+}
+
+.customers-icon {
+	fill: #8e8f99;
+}
+
+.customers-icon:hover {
+	fill: var(--btn-hover-color);
+}
+
+/* ------- Section Customs style end ------- */
 
 /* PAGE: "index.html" STYLE END */
 
