@@ -192,6 +192,10 @@ img {
 .intro {
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/people-office.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 600px;
 }
 
 .page-intro {
