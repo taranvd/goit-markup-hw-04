@@ -256,6 +256,17 @@ img {
 .advantages-item p {
 	width: 264px;
 }
+
+.advantages-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 8px;
+	min-height: 112px;
+	background-color: #f4f4fd;
+}
+
 /* ------- Section ADVANTAGES style end -------*/
 
 /* -------Section POSSITIBILITIES style start ------- */
@@ -434,6 +445,11 @@ img {
 	margin-bottom: 48px;
 }
 
+.portfolio-card-item:hover {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .port-border {
 	padding: 32px 16px;
 	border: 1px solid #e7e9fc;
@@ -452,6 +468,23 @@ img {
 	padding: 100px 0;
 }
 
+.page-footer {
+	display: flex;
+}
+
+.footer-text {
+	margin-right: 120px;
+}
+
+.footer-social-title {
+	margin-bottom: 16px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--white-color);
+}
+
 .footer-logo {
 	display: inline-block;
 	color: var(--footer-color);
@@ -463,6 +496,19 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	max-width: 264px;
+}
+
+.footer-social-list {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-social-icon {
+	border-radius: 50%;
+}
+
+.footer-social-icon:hover {
+	background-color: #31d0aa;
 }
 
 /* ------- Footer style end ------- */
