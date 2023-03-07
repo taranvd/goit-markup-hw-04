@@ -195,7 +195,6 @@ img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: var(--background);
-	width: 100%;
 	min-height: 600px;
 }
 
