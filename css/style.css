@@ -195,8 +195,10 @@ img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: var(--background);
-	min-height: 600px;
+	height: 600px;
 	max-width: 1440px;
+
+	margin: 0 auto;
 }
 
 .page-intro {
