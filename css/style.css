@@ -372,21 +372,14 @@ img {
 	gap: 24px;
 }
 
-.customers-item {
-	border: 1px solid #8e8f99;
-	border-radius: 4px;
-}
-
-.customers-item:hover {
-	border-color: var(--btn-hover-color);
-}
-
 .customers-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 168px;
 	height: 88px;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
 
 	fill: #8e8f99;
 }
@@ -394,6 +387,7 @@ img {
 .customers-link:hover,
 .customers-link:focus {
 	fill: var(--btn-hover-color);
+	border-color: var(--btn-hover-color);
 }
 
 /* ------- Section Customs style end ------- */
