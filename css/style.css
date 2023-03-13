@@ -61,6 +61,9 @@ p {
 
 img {
 	display: block;
+
+	height: auto;
+	width: 100%;
 }
 
 .link {
@@ -184,6 +187,32 @@ img {
 	color: var(--link-hover-focus);
 }
 
+.header-link {
+	position: relative;
+	padding: 28px 0;
+}
+
+.header-link.active::after {
+	content: "";
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: var(--logo-color);
+	border-radius: 2px;
+	opacity: 0;
+
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link.active:hover::after {
+	opacity: 1;
+}
+
 /*  ------- Header style end  ------- */
 
 /* PAGE: "index.html" STYLE START */
@@ -233,6 +262,7 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .intro-button:focus,
@@ -355,6 +385,7 @@ img {
 
 	border-radius: 50%;
 	background-color: var(--logo-color);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -382,6 +413,8 @@ img {
 	border-radius: 4px;
 
 	fill: #8e8f99;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -419,6 +452,8 @@ img {
 	border: 1px solid #e7e9fc;
 	border-radius: 4px;
 	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -452,6 +487,7 @@ img {
 
 .portfolio-card-link {
 	display: inline-block;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card-link:hover,
@@ -468,6 +504,32 @@ img {
 
 .card-list-subtitle {
 	margin-bottom: 8px;
+}
+
+.portfolio-card-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-card-overlay {
+	color: white;
+	background-color: var(--logo-color);
+	padding: 20px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	overflow: auto;
+}
+
+.portfolio-card-item:hover .portfolio-card-overlay {
+	transform: translateY(0);
 }
 
 /* PAGE: "portfolio.html" STYLE END */
@@ -524,6 +586,8 @@ img {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
